@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Secular One', sans-serif;
+}
+#mainSec{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ea7b0
+}
+.form1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media (max-width:767px) {
+    .form1{
+        flex-direction: column;
+    }
+}
+.task{
+    margin:0;
+    display: flex;
+    align-items: center;
+}
+.mainInput {
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    outline: none;
+    background: transparent;
+    border: 5px solid #FFf;
+    color: #FFF;
+    margin: 5px 0
+}
+.addText {
+    background: #98e9ba;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.6s all;
+    margin: 5px 0
+}
+.deleteText, .editText {
+    background: #cf6f6f;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.6s all;
+    margin: 0 5px;
+}
+.editText{
+    background: #98e9ba;
+}
+.addText:hover{
+    background-color: #56e991;
+}
+.deleteText:hover {
+    background-color: #f55959;
+}
+.editText:hover {
+    background-color: #56e991;
+}
+.form2 {
+    width: 95%;
+    background-color: #FFF;
+    color: #000;
+    min-height: 60vh;
+    max-height: 60vh;
+    overflow-y: auto;
+    margin: 20px auto;
+    padding: 10px 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    padding: 2vh;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #000000;
+    margin: 10px 0;
+}
+li p{
+width: 40%;
+overflow: auto;
+}
+li .allBtn{
+width: 50%;
+display: flex;
+justify-content: flex-end;
+}
+h3 {
+    width: 50%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: contents;
+}
+.active{
+    background-color: #78b894;
+}
+
+
+
+
+
+/* addText.onclick = function () {
+    addText.onclick = function () {
+        if (mainInput.value != '') {
+            arr.push(mainInput.value);
+            for(let i = 0; i < arr.length; i++) {
+                ul.innerHTML = `
+                    <li>
+                        <p>${arr[i]}</p>
+                        <div class="allBtn">
+                            <button class="editText" id="edit">Edit</button>
+                            <button class="deleteText" id="del">del</button>
+                        </div>
+                    </li>
+                    `
+            }
+        }
+    }
+} */
