@@ -113,26 +113,3 @@ h3 {
 .active{
     background-color: #78b894;
 }
-
-
-
-
-
-/* addText.onclick = function () {
-    addText.onclick = function () {
-        if (mainInput.value != '') {
-            arr.push(mainInput.value);
-            for(let i = 0; i < arr.length; i++) {
-                ul.innerHTML = `
-                    <li>
-                        <p>${arr[i]}</p>
-                        <div class="allBtn">
-                            <button class="editText" id="edit">Edit</button>
-                            <button class="deleteText" id="del">del</button>
-                        </div>
-                    </li>
-                    `
-            }
-        }
-    }
-} */
